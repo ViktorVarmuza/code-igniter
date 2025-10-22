@@ -1,0 +1,1 @@
+<script src="<?= base_url("scripts/carousel.js")?>"></script>

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@layer components {
+  .moje-vlastni-trida {
+    color: red;
+  }
+ .mobil-hidden {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+ }
+ 
+
+.mobil-open {
+  max-height: 500px;
+  padding: 1rem;
+  
+}
+.text-white{
+  color: white;
+}
+}

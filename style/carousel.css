@@ -1,0 +1,61 @@
+.carousel-container {
+    width: 95%;
+    margin: 50px auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    position:relative;
+}
+.next{
+    right: 10px; 
+    opacity: 50%;
+    cursor: pointer;
+}
+.prev{
+    left: 10px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(220, 220, 220, 0.8); /* změna pozadí */
+}
+
+.prev:hover i, .next:hover i {
+  color: #1D4ED8; /* barva ikony při hover */
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%; /* každý slide zabírá celou šířku kontejneru */
+  display: flex;
+  gap: 0.5rem; /* mezera mezi obrázky */
+}
+
+.slide-part img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.carousel-dots :hover {
+    color: #ffffff; /* barva tečky při hover */
+    transition: all 0.3s ease;
+  
+}
+.carousel-dots{
+  color: rgb(135, 135, 135);
+  cursor: pointer;
+  font-size: 1vw;
+}
+
+.dots-active{
+  color: white;
+}
