@@ -1,10 +1,10 @@
 <?php
 $current_page = basename($_SERVER['PHP_SELF']);
 $pages = [
-  base_url("index.php") => "Domů",
-  base_url("hraci.php") => "Hráči",
-  base_url("zapasy.php") => "Zápasy",
-  base_url("tabulka.php") => "Novinky"
+  base_url("/") => "Domů",
+  base_url("hraci") => "Hráči",
+  base_url("zapasy") => "Zápasy",
+  base_url("tabulka") => "Novinky"
 ];
 ?>
 
@@ -22,7 +22,7 @@ $pages = [
       <?php foreach ($pages as $file => $title): ?>
         <li>
           <a href="<?= $file ?>"
-            class="<?= $current_page == $file ? 'text-blue-600 font-bold' : 'text-gray-700 hover:text-blue-600' ?>">
+            class="<?= strpos($current_page, $file) ? 'text-blue-600 font-bold' : 'text-gray-700 hover:text-blue-600' ?>">
             <?= $title ?>
           </a>
         </li>
@@ -53,12 +53,3 @@ $pages = [
 
 </nav>
 
-<script>
-  const btn = document.getElementById("menu-btn");
-  const menu = document.getElementById("mobile-menu");
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("mobil-open");
-
-  });
-</script>

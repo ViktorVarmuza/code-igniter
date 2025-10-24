@@ -8,4 +8,22 @@ class main_controller extends BaseController
     {
         return view('index');
     }
+    public function hraci()
+    {
+        return view(
+            'hraci'
+        );
+    }
+    public function tabulka()
+    {
+        return view(
+            'tabulka'
+        );
+    }
+    public function zapasy()
+    {
+        return view(
+            'zapasy'
+        );
+    }
 }

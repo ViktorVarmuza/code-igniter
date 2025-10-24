@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="../src/output.css">
-<link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
+
 <?php
 $matches = [
     ["date" => "2025-09-01", "home" => "Sigma Olomouc", "home_country" => "cz", "away" => "Sparta Praha", "away_country" => "cz", "score" => "2:1"],
